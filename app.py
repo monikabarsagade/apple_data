@@ -10,7 +10,7 @@ prediction=''
 def home():
     return render_template('index.html')
 
-# This api is use to predict apple quality
+# This api is use to predict apple quality. 
 @app.route('/predict_apple_quality', methods=['POST'])
 def apple_quality():
     print("*"*50)
@@ -34,6 +34,12 @@ def apple_quality():
 
     print("quality ", prediction)
     return jsonify({'prediction': prediction})
+
+# Added to test commit on got repository.
+@app.route('/predict_apple_quality_test', methods=['POST'])
+def apple_quality_test_api():
+    return jsonify({'prediction': 'Good'})
+
 
 if __name__ == "__main__":
 
