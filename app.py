@@ -10,6 +10,7 @@ prediction=''
 def home():
     return render_template('index.html')
 
+# This api is use to predict apple quality
 @app.route('/predict_apple_quality', methods=['POST'])
 def apple_quality():
     print("*"*50)
