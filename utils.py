@@ -1,7 +1,7 @@
 import pickle
 import numpy as np
 
-# this function is use to predict apple quality
+# this function is use to predict apple quality, added by Nitin.
 def get_apple_quality(Size, Weight, Sweetness,Crunchiness,Juiciness,Ripeness,Acidity):
     model_file_path = r"artifact\knn.pkl"
 
